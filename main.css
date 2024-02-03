@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: #5f27cd;             /* cor de fundo */
+    padding: 16px 0;                         /* espacamento interno */
+    color: #fff;
+    display: flex;                           /* os elementos fiquem um ao lado do outro */
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;               /* Deixa todas as letras grandes */
+    font-style: italic;                      /* deixa as letras em italico */
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: #c8d6e5;
+    padding: 24px 0;
+    text-align: center;                     /* deixa o texto centralizado */
+    display: none;                          /* deixar o jquey fazer o efeito */
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;                          /* remove as bordas */
+    cursor: pointer;                       /* deixa o mouse aparcer um link ao clicar */
+    font-weight: bold;                     /* deixar o texto em negrito */
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;                      /* quando ocupar toda a tela, criar uma nova linha */
+
+}
+
+ul li {
+    max-width: 25%;                       /* largura maxima dos itens */
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+    height: 100%; 
+    
+}
+
+.img-link {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+.img-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .img-link {
+    opacity: 1;
+}
